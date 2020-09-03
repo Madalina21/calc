@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	min-height: 100vh;
+	background-color: #39B8C4;
+	
+}
+
+.calcule{/*tot calculatorul*/
+	display:grid;
+	position: relative;
+}
+
+.calcule .value{/*inputul unde se afiseaza textul*/
+	grid-column-start: 1;
+	grid-column-end: 5;
+	text-align:center;
+	height:40px;
+	font-size:18px;
+	border:none;
+	text-align: right;
+	outline:none;
+}
+.calcule span{/*cat tine butonul*/
+	display:grid;
+	width:60px;
+	height:60px;
+	place-items:center;
+	background: #1C3E41;
+	margin:none;
+	padding:none;
+
+}
+.calcule span:active{
+	background:#295A5E;
+}
+
+.calcule span.clear{
+	background:#ED236D;
+}
+
+.calcule span.clear:active{
+	background:#8117F1;
+}
+/*
+.calcule span.plus{
+	grid-row:span 2;
+	height:120px;
+}
+.calcule span.radical{
+	grid-column:span 2;
+	width:120px;
+}
+.calcule span.putere{
+	grid-column:span 2;
+	width:120px;
+
+}
+.calcule span.clear{
+	grid-column:span 2;
+	width:120px;
+	background:#ED236D;
+}
+*/
+.calcule span.egal{
+	background: #EDDD23;
+}
+.calcule span.egal:active{
+	background: #2DED23;
+}
+
